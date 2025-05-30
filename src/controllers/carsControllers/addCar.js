@@ -17,7 +17,7 @@ const addCar = async (req, res, next) => {
   try {
     const files = req.files;
 
-    const photo_urls = files.map(file => `/cars/${file.filename}`);
+    const photo_urls = files.map(file => `/images/cars/${file.filename}`);
     const primary_photo_url = photo_urls[0];
 
     // Отримати новий ID
