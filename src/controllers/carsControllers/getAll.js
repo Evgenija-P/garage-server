@@ -19,9 +19,10 @@ const getAll = async(req, res) => {
             price: item.price,  
             primary_photo_url: item.primary_photo_url, 
             year: item.year, 
+            custom_id: item.custom_id
         }}
     );
-
+console.log(JSON.stringify(data))
     res.json(data)
     }
 

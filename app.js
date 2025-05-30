@@ -14,7 +14,7 @@ const formatLogger = app.get("env") === "development" ? 'dev' : "short"
 app.use(logger(formatLogger))
 app.use(cors())
 app.use(express.json());
-app.use("/cars", express.static(path.join(__dirname, "public/cars")));
+app.use("/images/cars", express.static(path.join(__dirname, "public/images/cars")));
 
 app.use("/api/auth", authRouter)
 app.use("/api/cars", carsRouter)
